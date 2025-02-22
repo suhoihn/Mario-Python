@@ -1,0 +1,7 @@
+cape 아무키도 안 누르면 slowdown 실행
+cape 방향은 마리오가 앞을 보면 돌기 바로 직전 방향
+
+slowdown1.png가 스핀할때 cape 모양
+
+떨어질때 --> walk1 -> walk2 -> fall1
+	     (처   음   에   만)

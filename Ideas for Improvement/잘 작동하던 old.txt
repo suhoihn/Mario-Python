@@ -1,0 +1,27 @@
+for i in Platform.Platforms + 와리가리.swings:#이게 slope에서 바로 이동하면 이상한데로 워프해버림(고쳐야지?)
+                if i.platform in self.hitlistsV:
+                    okiedokie = False
+                    oldcenter = self.rect.center
+                    #oldspeed = self.movement[1]
+                    self.rect.y += i.speedy
+                    
+                    for k in range(abs(int(self.yv))):
+                        self.rect.y += 1
+                        
+                        if self.rect.colliderect(i.platform) and self.yv > 0 and self.rect.bottom < i.platform.bottom + abs(self.yv):
+                            okiedokie = True
+                           
+                            break
+                
+                    self.rect.center = oldcenter
+                    #self.movement[1] -= oldspeed
+                    if okiedokie:
+                        self.onplatform = True
+                        
+                        self.movement[1] += i.speedy
+
+                        #self.rect.bottom = i.platform.top
+                        self.Onslope = False
+                        #self.yv = 0
+                        
+                        self.collision_types['bottom'] = True

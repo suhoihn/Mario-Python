@@ -1,0 +1,8 @@
+2칸 snap done
+mario physics all change done
+collidelevel이라고 global 함수 만들기 done
+(ground는 index써서, blocks들은 그냥 체크, slope는 mask체크)
+pendulum simulator
+
+coin generator mario map
+using p switch

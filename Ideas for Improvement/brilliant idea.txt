@@ -1,0 +1,4 @@
+이분탐색 사용?
+rect를 정렬 -> init
+rect collide check함수 같은거로 더욱 빠르게 검사?
+(Globals.collision_test에 추가)

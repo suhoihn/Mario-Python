@@ -298,10 +298,10 @@ class OnOffSwitch:
         self.ActivatedByShell = False
 
 
-OnOffBlockImg =[pygame.image.load("Sprites/Blocks/OnOffBlock/OnBlockTriggered.png").convert_alpha(),
-               pygame.image.load("Sprites/Blocks/OnOffBlock/OnBlockUnTriggered.png").convert_alpha(),
-               pygame.image.load("Sprites/Blocks/OnOffBlock/OffBlockTriggered.png").convert_alpha(),
-               pygame.image.load("Sprites/Blocks/OnOffBlock/OffBlockUnTriggered.png").convert_alpha()]
+OnOffBlockImg =[pygame.image.load("./Sprites/Blocks/OnOffBlock/OnBlockTriggered.png").convert_alpha(),
+               pygame.image.load("./Sprites/Blocks/OnOffBlock/OnBlockUntriggered.png").convert_alpha(),
+               pygame.image.load("./Sprites/Blocks/OnOffBlock/OffBlockTriggered.png").convert_alpha(),
+               pygame.image.load("./Sprites/Blocks/OnOffBlock/OffBlockUntriggered.png").convert_alpha()]
 
 class OnOffBlock:
     def __init__(self,x,y,state):

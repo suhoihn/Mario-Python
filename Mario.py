@@ -10,7 +10,7 @@ SW,SH = 640, 480
 os.environ["SDL_VIDEO_CENTERED"] = "1"
 #만약에 도는 블록에 움직이는 버섯이 끼는 상황이 발생할 수 있음
 
-flag = pygame.HWSURFACE | pygame.DOUBLEBUF | pygame.FULLSCREEN | pygame.SCALED
+flag = pygame.HWSURFACE | pygame.DOUBLEBUF# | pygame.FULLSCREEN | pygame.SCALED
 
 screen2=pygame.display.set_mode((SW,SH),flag,16)
 const = 1
@@ -56,6 +56,7 @@ global tm
 deathimage = pygame.transform.scale(pygame.image.load("deathX.png"),(30,35)).convert_alpha()
 
 tm=0
+
 def blit_alpha(target, source, location, opacity):
     if opacity == 255:
         target.blit(source,location)
@@ -276,13 +277,13 @@ def Stamp_MM(colorlist):
         MM[i] = MM_ColorChange(raw_img,colorlist)
     return MM
 
-ff2 = os.listdir("../../Mega Man on pygame/cirno/TinyReimu/")
-def Stamp_RM(colorlist):
-    RM = {}
-    for i in ff2:
-        raw_img = Globals.trans_img_size(pygame.image.load("../../Mega Man on pygame/cirno/TinyReimu/" + i),1)
-        RM[i] = RM_ColorChange(raw_img,colorlist)
-    return RM
+# ff2 = os.listdir("../../Mega Man on pygame/cirno/TinyReimu/")
+# def Stamp_RM(colorlist):
+#     RM = {}
+#     for i in ff2:
+#         raw_img = Globals.trans_img_size(pygame.image.load("../../Mega Man on pygame/cirno/TinyReimu/" + i),1)
+#         RM[i] = RM_ColorChange(raw_img,colorlist)
+#     return RM
 
 
 MEGAMANS = {}
@@ -290,9 +291,9 @@ for name in ColorTable:
     MEGAMANS[name] = Stamp_MM(ColorTable[name])
     
 
-REIMUS = {}
-for name in ColorTable:
-    REIMUS[name] = Stamp_RM(ColorTable[name])
+# REIMUS = {}
+# for name in ColorTable:
+#     REIMUS[name] = Stamp_RM(ColorTable[name])
 
 #print(REIMUS)
 class Mario:
@@ -2990,7 +2991,7 @@ class Mario:
                     self.sitting=False
                 if not pygame.mixer.music.get_busy() and not self.walktoend:
                     if self.GotInRealGoal:
-                        pygame.mixer.music.load("Sounds/Clear2.wav")
+                        pygame.mixer.music.load("Sounds/Clear2.WAV")
                         pygame.mixer.music.play()
                         self.walktoend=True
                     else:

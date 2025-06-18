@@ -67,8 +67,9 @@ def initialize():
 #from Globals import MarioAt
 Levels = [
     #"flat land test",
-    #"Autoscrolling Water Level",
-    #["Falling Platforms","Falling Platforms_Exit"],
+    "Fireland",
+    "Autoscrolling Water Level",
+    ["Falling Platforms","Falling Platforms_Exit"],
     ["SMB1 1-1 Remake","SMB1 1-1 Remake_Underground"],
     ["SMB3 1-5 Remake","SMB3 1-5 Remake_Bonus Level","SMB3 1-5 Remake_Exit"],
     "Lv.test",
@@ -76,11 +77,10 @@ Levels = [
     "A Decent Level Solely Made by Myself",
     "Kaizo Mario",
     "Love Message",
-    #"The Doom of P-Switch",
+    "The Doom of P-Switch",
     ["NSMB 1-1 Remake","NSMB 1-1 Remake_underground"],
-    #"Unfinished Tutorial",
+    "Unfinished Tutorial",
     ["Falling Platforms","Falling Platforms_Exit"],
-    "Fireland",
     "Non-Stop Action with Stars"]
 #random.shuffle(Levels)
 def LoadLevel(L,MarioAt = 0):

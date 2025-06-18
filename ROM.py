@@ -76,10 +76,10 @@ Levels = [
     ["Rough Hills","Tower of Patience"],
     "A Decent Level Solely Made by Myself",
     "Kaizo Mario",
-    "Love Message",
+    #"Love Message",
     "The Doom of P-Switch",
     ["NSMB 1-1 Remake","NSMB 1-1 Remake_underground"],
-    "Unfinished Tutorial",
+    #"Unfinished Tutorial",
     ["Falling Platforms","Falling Platforms_Exit"],
     "Non-Stop Action with Stars"]
 #random.shuffle(Levels)
